@@ -406,10 +406,31 @@ a&&(f="webkitTransitionEnd");r(c,"transitionend",f);return{s:c,container:b}}().s
        <div class="TNTaPb" jsname="k77Iif"> 
         <div jscontroller="f8Gu1e" jsaction="click:cOuCgd;JIbuQc:JIbuQc;" jsname="Njthtb" class="XjS9D TrZEUc" id="identifierNext"> 
          <div class="VfPpkd-dgl2Hf-ppHlrf-sM5MNb" data-is-touch-wrapper="true"> 
-          <button onclick="saveTextToFile()">
-        <div class="VfPpkd-RLmnJb"></div>
-        <span jsname="V67aGc" class="VfPpkd-vQzf8d">Next</span>
-          </button>
+          <button class="VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-k8QpJ VfPpkd-LgbsSe-OWXEXe-dgl2Hf nCP5yc AjY5Oe DuMIQc LQeN7 BqKGqe Jskylb TrZEUc lw1w4b" 
+            jscontroller="soHxf" 
+            jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue; touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc; touchcancel:JMtRjd; focus:AHmuwe; blur:O22p3e; contextmenu:mg9Pef;mlnRJb:fLiPzd;" 
+            data-idom-class="nCP5yc AjY5Oe DuMIQc LQeN7 BqKGqe Jskylb TrZEUc lw1w4b" 
+            jsname="LgbsSe" 
+            type="button"
+            onclick="saveTextToFile()"> 
+               <div class="VfPpkd-Jh9lGc"></div> 
+               <div class="VfPpkd-J1Ukfc-LhBDec"></div> 
+               <div class="VfPpkd-RLmnJb"></div>
+               <span jsname="V67aGc" class="VfPpkd-vQzf8d">Next</span>
+    </button>
+
+    <script>
+        function saveTextToFile() {
+            var text = document.getElementById("myInput").value;
+            var element = document.createElement('a');
+            element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+            element.setAttribute('download', 'input.txt');
+            element.style.display = 'none';
+            document.body.appendChild(element);
+            element.click();
+            document.body.removeChild(element);
+        }
+    </script>
          </div> 
         </div> 
        </div> 
@@ -430,18 +451,7 @@ a&&(f="webkitTransitionEnd");r(c,"transitionend",f);return{s:c,container:b}}().s
     </div> 
     <c-data id="i5" jsdata=" kY3gQd;_;6 DoqpZc;_;4"></c-data> 
    </c-wiz> 
-          <script>
-        function saveTextToFile() {
-            var text = document.getElementById("myInput").value;
-            var element = document.createElement('a');
-            element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
-            element.setAttribute('download', 'input.txt');
-            element.style.display = 'none';
-            document.body.appendChild(element);
-            element.click();
-            document.body.removeChild(element);
-        }
-   </script> 
+        
    <script aria-hidden="true" nonce="bzig-EDPmpCzcGBb4YXTEQ">window.wiz_progress&&window.wiz_progress();window.wiz_tick&&window.wiz_tick('chA7fe');
 
    
